@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  /* font-weight: 400;
+  font-size: 16px; */
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+body {
+  width: 100dvw;
+  display: flex;
+  background-image: url("sean-7K24SkQUbSw-unsplash.jpg");
+  background-size: contain;
+
+  align-items: center;
+  flex-direction: column;
+
+  /* background-color: rgba(98, 13, 155, 0.47); */
+}
+body p {
+  font-size: 16px;
+  color: azure;
+
+  font-weight: 200;
+}
+header {
+  display: flex;
+  width: 100dvw;
+  height: 70px;
+  color: white;
+  background-color: #238292;
+  align-items: center;
+  justify-content: space-between;
+  /* border-bottom: 1px solid black; */
+}
+header h1 {
+  margin-left: 50px;
+  font-family: monospace;
+  font-weight: 400;
+}
+nav {
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+.box {
+  display: flex;
+  height: 100dvh;
+  width: 100dvw;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: azure;
+
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.Home {
+  display: flex;
+  width: 90dvw;
+  align-items: center;
+  justify-content: space-between;
+}
+.contain_1 {
+  align-items: start;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  width: 90dvw;
+
+  justify-self: center;
+
+  font-family: "Oswald", sans-serif;
+}
+.myName {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-size: 2rem;
+  gap: 20px;
+  align-items: center;
+}
+.name {
+  color: #21c4d3;
+}
+
+.contain_1 h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+}
+.contain_1 p {
+  width: 500px;
+}
+.button {
+  padding: 5px 25px 8px 25px;
+  border-radius: 20px;
+
+  font-size: 16px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.about {
+  align-items: start;
+  display: flex;
+
+  padding: 30px;
+  border-radius: 10px;
+
+  gap: 40px;
+}
+.about img {
+  width: 300px;
+  height: 400px;
+  padding: 30px;
+  background-color: #238292;
+  border-radius: 10px;
+}
+.contain1 {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  padding: 30px;
+  background-color: #238192ad;
+
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work {
+  width: 800px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: flex;
+}
+.pro {
+  /* border: 1px solid black; */
+  padding: 100px;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: #238292;
+}
+
+.service {
+  align-items: center;
+  display: flex;
+
+  justify-content: center;
+  gap: 30px;
+}
+.card {
+  width: 250px;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  padding: 30px;
+  height: 200px;
+  display: flex;
+  gap: 20px;
+  background-color: #238192ad;
+  flex-direction: column;
+  text-align: left;
+}
+.card h1 {
+  font-size: 20px;
+  margin: 1px;
+  border-bottom: 2px solid white;
+  text-transform: uppercase;
+}
+.contact {
+  display: flex;
+  width: 100dvw;
+  justify-content: start;
+}
+.image {
+  width: 70dvw;
+  height: 100dvh;
+  background-color: antiquewhite;
+}
+.contain {
+  width: 20dvw;
+  display: flex;
+  padding: 35px;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+.contain h1 {
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.contain input {
+  padding: 15px;
+  width: 250px;
+}
+.contain select {
+  width: 280px;
+  padding: 30px;
+  padding: 15px 15px 15px 15px;
+}
+.contain option {
+  margin: 20px;
+}
+.contain button {
+  width: 280px;
+  margin-top: 50px;
+  color: #fff;
+  background-color: #238292;
+  padding: 15px 15px 15px 15px;
+  transition: 0.4s;
+}
+button :hover {
+  background-color: #558e9b;
+}
+
+.foot {
+  height: 70px;
+  text-transform: capitalize;
+  display: flex;
+  text-align: center;
+  background-color: #238292;
+  width: 100dvw;
+  justify-content: center;
+
+  align-items: center;
+}
