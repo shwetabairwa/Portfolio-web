@@ -18,7 +18,7 @@ body {
 }
 body p {
   font-size: 14px;
-
+  line-height: 20px;
   font-weight: 200;
 }
 header {
@@ -56,6 +56,7 @@ nav a {
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
+  border-radius: 3px;
 }
 
 .box {
@@ -65,21 +66,21 @@ nav a {
   align-items: center;
   justify-content: center;
   gap: 30px;
-
   color: azure;
-
   flex-direction: column;
 }
 .section5 {
   background-color: #071d21;
 }
 .section3 {
-  height: 150dvh;
+  height: 130dvh;
 }
 
 .title {
   font-size: 4rem;
   color: #021318;
+  margin: 30px;
+  text-decoration: underline;
   text-transform: capitalize;
 }
 .Home {
@@ -122,28 +123,32 @@ nav a {
 .about {
   align-items: start;
   display: flex;
-  padding: 30px;
+  padding: 20px;
+  text-align: left;
   border-radius: 10px;
-
+  align-items: center;
+  justify-content: center;
   gap: 40px;
 }
 .about img {
-  width: 300px;
-  height: 400px;
+  width: 330px;
+  height: 330px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 30px;
-
+  background-image: url("A\ profile\ image.jpeg");
+  background-size: contain;
   border-radius: 10px;
+  padding: 10px;
+  background-color: #10282c;
 }
 .contain1 {
   display: flex;
-  width: 500px;
-  height: 400px;
-  padding: 30px;
+  width: 600px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 300px;
+  padding: 25px;
   background-color: #fff;
   color: #021318;
   border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   flex-direction: column;
   gap: 20px;
 }
@@ -166,15 +171,22 @@ nav a {
   display: flex;
 }
 .pro {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  height: 250px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: end;
   width: 250px;
+  transition: transform 0.2s;
+
+  margin: 0 auto;
   margin: 20px;
   border-radius: 10px;
+}
+.pro:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
 }
 .pro_contain {
   width: 230px;
@@ -183,7 +195,50 @@ nav a {
   border-radius: 0px 0px 10px 10px;
   padding: 10px;
   gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   color: white;
+}
+.pro1 {
+  background-image: url("images/amazone.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.pro2 {
+  background-image: url("images/blog.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.pro3 {
+  background-image: url("images/youtube.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.pro4 {
+  background-image: url("images/parallax.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.pro5 {
+  background-image: url("images/music.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.pro6 {
+  background-image: url("images/rasturent.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.pro7 {
+  background-image: url("images/tribute.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.pro8 {
+  background-image: url("images/landing.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .service {
@@ -199,12 +254,10 @@ nav a {
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   width: 250px;
   border-radius: 10px;
-
   padding: 30px;
   height: 200px;
   display: flex;
   gap: 20px;
-
   flex-direction: column;
   text-align: left;
 }
@@ -218,9 +271,10 @@ nav a {
   background-color: #10282c;
 }
 .card h1 {
-  font-size: 20px;
+  font-size: 18px;
   margin: 1px;
-  border-bottom: 2px solid white;
+  text-decoration: underline;
+
   text-transform: uppercase;
 }
 .contact {
@@ -253,6 +307,15 @@ nav a {
   padding: 15px;
   width: 250px;
 }
+.socail {
+  width: 280px;
+  height: 50px;
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
 .contain select {
   width: 280px;
   padding: 30px;
@@ -261,16 +324,21 @@ nav a {
 .contain option {
   margin: 20px;
 }
-.contain button {
-  width: 280px;
+.button1 {
+  width: 283px;
   margin-top: 50px;
-  color: #fff;
-  background-color: #468189;
+  background-color: #fff;
+  color: #10282c;
   padding: 15px 15px 15px 15px;
-  transition: 0.4s;
+  transition: background-color 1s;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: none;
+  text-decoration: none;
 }
-button :hover {
-  background-color: #558e9b;
+.button1:hover {
+  background-color: #238292;
+  color: #021318;
 }
 
 .foot {
