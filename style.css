@@ -12,17 +12,12 @@ html {
 body {
   width: 100dvw;
   display: flex;
-  background-image: url("sean-7K24SkQUbSw-unsplash.jpg");
-  background-size: contain;
 
   align-items: center;
   flex-direction: column;
-
-  /* background-color: rgba(98, 13, 155, 0.47); */
 }
 body p {
-  font-size: 16px;
-  color: azure;
+  font-size: 14px;
 
   font-weight: 200;
 }
@@ -30,29 +25,39 @@ header {
   display: flex;
   width: 100dvw;
   height: 70px;
-  color: white;
-  background-color: #238292;
+
   align-items: center;
   justify-content: space-between;
   /* border-bottom: 1px solid black; */
 }
 header h1 {
   margin-left: 50px;
-  font-family: monospace;
+  font-family: "Oswald", sans-serif;
+  color: #10282c;
   font-weight: 400;
 }
 nav {
   display: flex;
   gap: 30px;
   text-decoration: none;
-  color: black;
+  align-items: center;
   margin-right: 30px;
 }
 nav a {
   text-decoration: none;
-  color: white;
+  color: black;
   text-transform: capitalize;
 }
+
+.button {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #021318;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .box {
   display: flex;
   height: 100dvh;
@@ -60,13 +65,21 @@ nav a {
   align-items: center;
   justify-content: center;
   gap: 30px;
+
   color: azure;
 
   flex-direction: column;
 }
+.section5 {
+  background-color: #071d21;
+}
+.section3 {
+  height: 150dvh;
+}
 
 .title {
-  font-size: 2rem;
+  font-size: 4rem;
+  color: #021318;
   text-transform: capitalize;
 }
 .Home {
@@ -77,28 +90,24 @@ nav a {
 }
 .contain_1 {
   align-items: start;
-  color: #fff;
-
+  color: black;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 30px;
-  width: 90dvw;
 
+  width: 100dvw;
   justify-self: center;
-
-  font-family: "Oswald", sans-serif;
 }
 .myName {
   display: flex;
   flex-direction: row;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 3rem;
   gap: 20px;
   align-items: center;
 }
 .name {
-  color: #21c4d3;
+  color: #10282c;
 }
 
 .contain_1 h3 {
@@ -109,20 +118,10 @@ nav a {
 .contain_1 p {
   width: 500px;
 }
-.button {
-  padding: 5px 25px 8px 25px;
-  border-radius: 20px;
-
-  font-size: 16px;
-  border: 2px solid white;
-  text-transform: uppercase;
-  color: #fff;
-}
 
 .about {
   align-items: start;
   display: flex;
-
   padding: 30px;
   border-radius: 10px;
 
@@ -131,8 +130,9 @@ nav a {
 .about img {
   width: 300px;
   height: 400px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 30px;
-  background-color: #238292;
+
   border-radius: 10px;
 }
 .contain1 {
@@ -140,9 +140,10 @@ nav a {
   width: 500px;
   height: 400px;
   padding: 30px;
-  background-color: #238192ad;
-
+  background-color: #fff;
+  color: #021318;
   border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   flex-direction: column;
   gap: 20px;
 }
@@ -151,6 +152,7 @@ nav a {
   width: 800px;
   align-items: center;
   display: flex;
+  color: #021318;
   flex-direction: column;
   gap: 30px;
 }
@@ -164,11 +166,24 @@ nav a {
   display: flex;
 }
 .pro {
-  /* border: 1px solid black; */
-  padding: 100px;
-  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 250px;
   margin: 20px;
-  background-color: #238292;
+  border-radius: 10px;
+}
+.pro_contain {
+  width: 230px;
+  height: 80px;
+  background-color: #10282c;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px;
+  gap: 10px;
+  color: white;
 }
 
 .service {
@@ -178,17 +193,29 @@ nav a {
   justify-content: center;
   gap: 30px;
 }
+
 .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   width: 250px;
   border-radius: 10px;
-  /* border: 1px solid black; */
+
   padding: 30px;
   height: 200px;
   display: flex;
   gap: 20px;
-  background-color: #238192ad;
+
   flex-direction: column;
   text-align: left;
+}
+.card1 {
+  background-color: #021318;
+}
+.card2 {
+  background-color: #071d21;
+}
+.card3 {
+  background-color: #10282c;
 }
 .card h1 {
   font-size: 20px;
@@ -204,6 +231,8 @@ nav a {
 .image {
   width: 70dvw;
   height: 100dvh;
+  background-image: url("Blue\ White\ One\ Photo\ Night\ Sky\ Desktop\ Wallpaper.png");
+  background-size: cover;
   background-color: antiquewhite;
 }
 .contain {
@@ -236,7 +265,7 @@ nav a {
   width: 280px;
   margin-top: 50px;
   color: #fff;
-  background-color: #238292;
+  background-color: #468189;
   padding: 15px 15px 15px 15px;
   transition: 0.4s;
 }
@@ -249,9 +278,9 @@ button :hover {
   text-transform: capitalize;
   display: flex;
   text-align: center;
-  background-color: #238292;
+  background-color: #10282c;
   width: 100dvw;
   justify-content: center;
-
+  color: white;
   align-items: center;
 }
