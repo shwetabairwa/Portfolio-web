@@ -1,0 +1,88 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.section {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.img1 {
+  background-image: url("unsplash__RBcxo9AU-U.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.img2 {
+  background-image: url("section2.jpg");
+  background-size: cover;
+}
+.img3 {
+  background-image: url("LAST\ SECTION.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.box1 {
+  background: #313534;
+  color: white;
+}
+.box2 {
+  color: #313534;
+  background-color: white;
+}
+.title_bg {
+  background: #313534;
+}
+.title_bg1 {
+  background: rgba(255, 255, 255, 0.276);
+}
+
+.sub_section1 {
+  height: 500px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub_section1 h1 {
+  color: #f7ece5;
+  font-family: Lato;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.sub_section2 {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub_section2 h3 {
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 20px;
+}
+
+.sub_section2 p {
+  margin: 20px;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29px;
+  /* 161.111% */
+  letter-spacing: 0.9px;
+}

@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainPage{
+    display: flex;
+    justify-content: left;
+
+    align-items: start;
+}
+.horizobatlNavBar{
+    width: 240px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    background: #FFF;
+}
+.youtubePage{
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  
+    background: #FFF;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 140px;
+    justify-content: space-between;
+    margin: 10px;
+}
+.box{
+    width: 140px;
+   
+    display: flex;
+    height: 50px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: start;
+}
+.box h1{
+    color: #000;
+font-family: Jaldi;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 45px; /* 204.545% */
+}
+.box img{
+    margin: 8px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid #E2E2E2;
+  
+
+}
+.sreachBar{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.bar{
+    width: 500px;
+    height: 37px;
+ 
+}
+.srearchIcon{
+    border: 0.5px solid #000;
+background: #F5F5F5;
+box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25) inset;
+width: 50px;
+padding: 8px;
+height: 36px;
+flex-shrink: 0;
+}
+.mic{
+    width: 30px;
+height: 30px;
+margin: 10px;
+padding: 5px;
+background-color: #EBEBEB;
+border-radius: 50%;
+flex-shrink: 0;
+}
+.iconsBar{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+    margin-right: 30px;
+    
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.profile{
+    background-color: #E2E2E2;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin: 5px;
+
+}
+.navBar{
+    display: flex;
+    border-bottom: 1px solid #E2E2E2;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    height: 50px;
+}
+.navBar button{
+
+border-radius: 10px;
+
+background: #EEE;
+color: #000;
+padding: 8px 8px 8px 8px;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.section{
+    display: flex;
+    height: 260px;
+    background: #F8F8F8;
+    border-bottom: 3px solid #fff;
+}
+.Frame{
+    margin: 15px;
+}
+.contain{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    width: 275px;
+   
+}
+.subContent {
+width: 230px;
+padding: 5px;
+line-height: 22px;
+}
+.subContent h1{
+    color: #000;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+.subContent p{
+    color: #484848;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.realted{
+    display: flex;
+    background: #F2F2F2;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.realted h1{
+    color: #000;
+font-family: Jaldi;
+font-size: 28px;
+margin-left: 20px;
+
+font-style: normal;
+font-weight: 400;
+line-height: 45px; /* 160.714% */
+}
+.realted img{
+    margin-right: 20px;
+}

@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.header{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 40px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo h1{
+    color: #149F39;
+font-family: Russo One;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px;
+}
+
+.header i{
+    width: 32px;
+height: 32px;
+flex-shrink: 0;
+}
+.hero{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+
+     
+}
+.image{
+    height: 500px;
+    width: 500px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.contain{
+    text-align: left;
+    margin-right: 100px;
+    
+}
+.contain h1{
+    color: #000;
+font-family: Roboto;
+font-size: 72px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.contain p{
+    color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px; /* 158.333% */
+}
+.off{
+    width: 205px;
+height: 35px;
+flex-shrink: 0;
+background: #149F39;
+color: #FFF;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.explore{
+    color: #FFF;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px; /* 79.167% */
+background: #FFC066;
+width: 174px;
+height: 57px;
+flex-shrink: 0;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.icons h1{
+color: #000;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 19px; /* 105.556% */
+}
+.icons p{
+color: #000;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 19px; /* 135.714% */
+letter-spacing: 0.42px;
+width: 176px;
+}
+.contain1{
+    margin: 10px;
+}
+
+.page2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    
+}
+
+.menu{
+   text-align: center;
+  
+}
+.menu button{
+    width: 137px;
+    height: 43px;
+    color: #FFF;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: #149F39;
+margin: 20px;
+}
+.foodMenu{
+    height: 800px;
+    margin: 40px;
+    
+}
+.row1{
+    display: flex;
+    margin: 0px;
+width: 1000px;
+  
+    height: 500px;
+}
+.row2{
+    display: flex;
+    margin: 0px;
+    width: 1000px;
+
+    height: 250px;
+         
+}
+.flex-item {
+    flex: 1;
+    background-color: #ccc;
+    margin: 5px;
+    
+  }
+.img1{
+background-image: url("unsplash_yCIcDyKm440.png");
+background-size: cover;
+
+flex-basis: calc(50% - 10px)
+
+
+}
+.img2{
+ background-image: url("unsplash_POFG828-GQc.png");
+ background-size: cover;
+flex-basis: calc(25% - 10px)
+
+}
+.img3{
+background-image: url("unsplash_qeWlYA2G_n4.png");
+background-size: cover;
+height: 240px;
+flex-basis: calc(25% - 10px)
+
+}
+.img4{
+    background-image: url("unsplash_JCbsOIhr5BY.png");
+    background-size: cover;
+    
+    flex-basis: calc(25% - 10px)
+}
+.img5{
+    background-image: url("unsplash_2YVTkdlfKfA.png");
+    background-size: cover;
+    
+   flex-basis: calc(25% - 10px)
+   
+   }
+.img6{
+   background-image: url("unsplash_FFqNATH27EM.png");
+   background-size: cover;
+   
+   flex-basis: calc(25% - 10px)
+   
+   }
+.img7{
+       background-image: url("unsplash_tG9eGRhaSXE\ \(1\).png");
+       background-size: cover;
+       height: 490px;
+        align-self: self-end;
+       flex-basis: calc(25% - 10px)
+}
+.foot{
+    display: flex;
+    height: 200px;
+    width: 100%;
+   justify-content: center;
+   align-items: start;
+   text-align: left;
+   background: #FFF0DB;
+   line-height: 22px; 
+
+   
+} 
+.list1{
+    margin: 40px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+ 
+}
+.head{
+    color: #565656;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+margin-top: 10px;
+margin-bottom: 10px;
+ 
+}
+.socail{
+    display: flex; 
+}
+.socail input{
+    width: 300px;
+height: 20px;
+flex-shrink: 0;
+border: 0.2px solid #000;
+background: #FFF;
+
+}
+.socail i{
+    padding-right: 8px;
+}
+

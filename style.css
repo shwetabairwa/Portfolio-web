@@ -38,7 +38,7 @@ header h1 {
 }
 nav {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   text-decoration: none;
   align-items: center;
   margin-right: 30px;
@@ -46,7 +46,13 @@ nav {
 nav a {
   text-decoration: none;
   color: black;
+  padding: 5px;
+  transition: transform 0.4s;
   text-transform: capitalize;
+  border-bottom: 5px solid #fff;
+}
+nav a:hover {
+  border-bottom: 5px solid #071d21;
 }
 
 .button {
@@ -55,8 +61,13 @@ nav a {
   background-color: #021318;
   font-size: 14px;
   text-transform: uppercase;
+  transition: transform 4s;
   color: #fff;
   border-radius: 3px;
+}
+.button:hover {
+  background-color: #bf5d0e;
+  color: #fff;
 }
 
 .box {
@@ -188,6 +199,7 @@ nav a {
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
 }
+
 .pro_contain {
   width: 230px;
   height: 80px;
@@ -200,6 +212,7 @@ nav a {
   gap: 10px;
   color: white;
 }
+
 .pro1 {
   background-image: url("images/amazone.PNG");
   background-size: contain;
@@ -333,12 +346,10 @@ nav a {
   transition: background-color 1s;
   font-size: 18px;
   font-weight: 400;
-  box-shadow: none;
-  text-decoration: none;
 }
 .button1:hover {
-  background-color: #238292;
-  color: #021318;
+  background-color: #bf5d0e;
+  color: #fff;
 }
 
 .foot {
