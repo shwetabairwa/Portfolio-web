@@ -49,16 +49,16 @@ nav a {
   padding: 5px;
   transition: transform 0.4s;
   text-transform: capitalize;
-  border-bottom: 5px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 nav a:hover {
-  border-bottom: 5px solid #071d21;
+  border-bottom: 3px solid #90c5da;
 }
 
 .button {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #021318;
+  background-color: #034b57;
   font-size: 14px;
   text-transform: uppercase;
   transition: transform 4s;
@@ -66,7 +66,7 @@ nav a:hover {
   border-radius: 3px;
 }
 .button:hover {
-  background-color: #bf5d0e;
+  background-color: #90c5da;
   color: #fff;
 }
 
@@ -116,10 +116,11 @@ nav a:hover {
   text-transform: uppercase;
   font-size: 3rem;
   gap: 20px;
+  color: #034b57;
   align-items: center;
 }
 .name {
-  color: #10282c;
+  color: #90c5da;
 }
 
 .contain_1 h3 {
@@ -157,8 +158,15 @@ nav a:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   height: 300px;
   padding: 25px;
-  background-color: #fff;
-  color: #021318;
+
+  background: linear-gradient(
+    135deg,
+    hsla(189, 93%, 18%, 1) 0%,
+    hsla(192, 37%, 42%, 1) 33%,
+    hsla(197, 50%, 71%, 1) 100%,
+    hsla(197, 50%, 71%, 1) 100%
+  );
+  color: #ffffff;
   border-radius: 10px;
   flex-direction: column;
   gap: 20px;
@@ -185,6 +193,13 @@ nav a:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   height: 230px;
   display: flex;
+  background: linear-gradient(
+    360deg,
+    hsla(189, 93%, 18%, 1) 0%,
+    hsla(192, 37%, 42%, 1) 57%,
+    hsla(197, 50%, 71%, 1) 100%,
+    hsla(197, 50%, 71%, 1) 100%
+  );
   flex-direction: column;
   justify-content: end;
   width: 250px;
@@ -203,7 +218,15 @@ nav a:hover {
 .pro_contain {
   width: 230px;
   height: 80px;
-  background-color: #10282c;
+
+  background: linear-gradient(
+    360deg,
+    hsla(189, 93%, 18%, 1) 0%,
+    hsla(192, 37%, 42%, 1) 57%,
+    hsla(197, 50%, 71%, 1) 100%,
+    hsla(197, 50%, 71%, 1) 100%
+  );
+
   border-radius: 0px 0px 10px 10px;
   padding: 10px;
   gap: 10px;
@@ -263,8 +286,12 @@ nav a:hover {
 }
 
 .card {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background: linear-gradient(
+    360deg,
+    hsla(189, 93%, 18%, 1) 0%,
+    hsla(197, 50%, 71%, 1) 100%,
+    hsla(197, 50%, 71%, 1) 100%
+  );
   width: 250px;
   border-radius: 10px;
   padding: 30px;
@@ -293,14 +320,21 @@ nav a:hover {
 .contact {
   display: flex;
   width: 100dvw;
+  background: linear-gradient(
+    180deg,
+    hsla(189, 93%, 18%, 1) 0%,
+    hsla(192, 37%, 42%, 1) 57%,
+    hsla(197, 50%, 71%, 1) 100%,
+    hsla(197, 50%, 71%, 1) 100%
+  );
   justify-content: start;
 }
 .image {
   width: 70dvw;
   height: 100dvh;
-  background-image: url("Blue\ White\ One\ Photo\ Night\ Sky\ Desktop\ Wallpaper.png");
+  background-image: url("Blue\ Beautiful\ Ocean\ Aerial\ Photography\ April\ Nature\ Desktop\ Wallpaper.png");
   background-size: cover;
-  background-color: antiquewhite;
+  background-color: #326977;
 }
 .contain {
   width: 20dvw;
@@ -308,6 +342,7 @@ nav a:hover {
   padding: 35px;
   flex-direction: column;
   align-items: stretch;
+
   justify-content: center;
 }
 .contain h1 {
@@ -357,7 +392,7 @@ nav a:hover {
   text-transform: capitalize;
   display: flex;
   text-align: center;
-  background-color: #10282c;
+  background-color: #034b57;
   width: 100dvw;
   justify-content: center;
   color: white;
