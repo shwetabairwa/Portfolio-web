@@ -1,97 +1,138 @@
 * {
   margin: 0;
   padding: 0;
-
-  /* font-weight: 400;
-  font-size: 16px; */
 }
+:root {
+  --primary-color: #000000;
+  --secondary-color: #121212;
+  --text-color: #fff;
+  --card-color: #141414;
+}
+.dark-theame {
+  --primary-color: #fff;
+  --secondary-color: #f8f8f8;
+  --text-color: #000;
+}
+
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 10rem;
 }
 body {
   width: 100dvw;
   display: flex;
-
   align-items: center;
   flex-direction: column;
 }
-body p {
+p {
   font-size: 14px;
+  color: var(--text-color);
   line-height: 20px;
   font-weight: 200;
 }
 header {
   display: flex;
   width: 100dvw;
-  height: 70px;
-
+  height: 90px;
+  background: var(--primary-color);
   align-items: center;
+
   justify-content: space-between;
   /* border-bottom: 1px solid black; */
 }
 header h1 {
   margin-left: 50px;
   font-family: "Oswald", sans-serif;
-  color: #10282c;
+  color: var(--text-color);
+
   font-weight: 400;
 }
 nav {
   display: flex;
   gap: 40px;
+  padding: 10px;
+
   text-decoration: none;
   align-items: center;
+
   margin-right: 30px;
 }
 nav a {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
+  font-size: 18pxs;
   padding: 5px;
   transition: transform 0.4s;
   text-transform: capitalize;
-  border-bottom: 3px solid #fff;
 }
 nav a:hover {
-  border-bottom: 3px solid #90c5da;
+  color: aquamarine;
+}
+nav img {
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-color);
+  padding: 8px;
+  border-radius: 50%;
+}
+.contact_button {
+  width: 120px;
+  padding: 5px;
+  text-align: center;
+  color: aquamarine;
+  border: 2px solid aquamarine;
 }
 
-.button {
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #034b57;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: transform 4s;
-  color: #fff;
-  border-radius: 3px;
+.port {
+  display: flex;
+  align-items: center;
+  gap: 0;
 }
-.button:hover {
-  background-color: #90c5da;
-  color: #fff;
+.head {
+  color: aquamarine;
 }
-
 .box {
   display: flex;
   height: 100dvh;
   width: 100dvw;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  color: azure;
+  color: var(--text-color);
   flex-direction: column;
 }
-.section5 {
-  background-color: #071d21;
+.section1 {
+  background: var(--primary-color);
+
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section2 {
+  background: var(--secondary-color);
+  height: 90dvh;
+  align-self: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .section3 {
-  height: 130dvh;
+  background: var(--primary-color);
+}
+.section4 {
+  height: 90dvh;
+  background: var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.section5 {
+  background-color: var(--secondary-color);
+  height: max-content;
 }
 
 .title {
-  font-size: 4rem;
-  color: #021318;
-  margin: 30px;
-  text-decoration: underline;
+  font-size: 3rem;
+
+  color: var(--text-color);
+  margin-left: 50px;
   text-transform: capitalize;
 }
 .Home {
@@ -102,25 +143,21 @@ nav a:hover {
 }
 .contain_1 {
   align-items: start;
-  color: black;
   display: flex;
   flex-direction: column;
   gap: 20px;
-
   width: 100dvw;
   justify-self: center;
 }
-.myName {
-  display: flex;
+.contain_1 h1 {
   flex-direction: row;
   text-transform: uppercase;
-  font-size: 3rem;
-  gap: 20px;
-  color: #034b57;
-  align-items: center;
+  font-size: 5rem;
+  color: var(--text-color);
 }
 .name {
-  color: #90c5da;
+  color: aquamarine;
+  font-family: Pacifico;
 }
 
 .contain_1 h3 {
@@ -129,7 +166,26 @@ nav a:hover {
   font-weight: 400;
 }
 .contain_1 p {
-  width: 500px;
+  width: 400px;
+}
+.button {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid aquamarine;
+  font-size: 14px;
+
+  width: 100px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+
+  height: max-content;
+  text-align: center;
+  transition: transform 4s;
+  color: var(--text-color);
+}
+.button:hover {
+  background-color: aquamarine;
+  color: var(--primary-color);
 }
 
 .about {
@@ -137,46 +193,41 @@ nav a:hover {
   display: flex;
   padding: 20px;
   text-align: left;
-  border-radius: 10px;
   align-items: center;
   justify-content: center;
   gap: 40px;
 }
 .about img {
+  width: 320px;
+  height: 320px;
+  position: relative;
+  top: -30px;
+  left: -30px;
+}
+.img-container {
   width: 330px;
   height: 330px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-image: url("A\ profile\ image.jpeg");
-  background-size: contain;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #10282c;
+  background-color: aquamarine;
 }
 .contain1 {
   display: flex;
   width: 600px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   height: 300px;
   padding: 25px;
-
-  background: linear-gradient(
-    135deg,
-    hsla(189, 93%, 18%, 1) 0%,
-    hsla(192, 37%, 42%, 1) 33%,
-    hsla(197, 50%, 71%, 1) 100%,
-    hsla(197, 50%, 71%, 1) 100%
-  );
-  color: #ffffff;
-  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 3px solid aquamarine;
+  color: var(--text-color);
   flex-direction: column;
   gap: 20px;
 }
-
+.contain1 h1 {
+  color: aquamarine;
+}
 .work {
   width: 800px;
   align-items: center;
   display: flex;
-  color: #021318;
+
   flex-direction: column;
   gap: 30px;
 }
@@ -191,55 +242,38 @@ nav a:hover {
 }
 .pro {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  height: 230px;
+  height: 225px;
   display: flex;
-  background: linear-gradient(
-    360deg,
-    hsla(189, 93%, 18%, 1) 0%,
-    hsla(192, 37%, 42%, 1) 57%,
-    hsla(197, 50%, 71%, 1) 100%,
-    hsla(197, 50%, 71%, 1) 100%
-  );
   flex-direction: column;
   justify-content: end;
   width: 250px;
   transition: transform 0.2s;
-
   margin: 0 auto;
-  margin: 20px;
-  border-radius: 10px;
+  margin: 30px;
 }
 .pro:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3);
 }
 
 .pro_contain {
   width: 230px;
-  height: 80px;
-
-  background: linear-gradient(
-    360deg,
-    hsla(189, 93%, 18%, 1) 0%,
-    hsla(192, 37%, 42%, 1) 57%,
-    hsla(197, 50%, 71%, 1) 100%,
-    hsla(197, 50%, 71%, 1) 100%
-  );
-
-  border-radius: 0px 0px 10px 10px;
+  height: 90px;
+  background-color: aquamarine;
   padding: 10px;
   gap: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  color: white;
+  color: #10282c;
 }
-
+.pro_contain p {
+  color: #10282c;
+  font-size: 12px;
+}
 .pro1 {
   background-image: url("images/amazone.PNG");
   background-size: contain;
-  background-repeat: no-repeat;
 }
 .pro2 {
   background-image: url("images/blog.PNG");
@@ -286,22 +320,18 @@ nav a:hover {
 }
 
 .card {
-  background: linear-gradient(
-    360deg,
-    hsla(189, 93%, 18%, 1) 0%,
-    hsla(197, 50%, 71%, 1) 100%,
-    hsla(197, 50%, 71%, 1) 100%
-  );
   width: 250px;
-  border-radius: 10px;
   padding: 30px;
   height: 200px;
   display: flex;
+  color: var(--text-color);
   gap: 20px;
+  border: 3px solid aquamarine;
   flex-direction: column;
   text-align: left;
+  background-color: var(--primary-color);
 }
-.card1 {
+/* .card1 {
   background-color: #021318;
 }
 .card2 {
@@ -309,92 +339,88 @@ nav a:hover {
 }
 .card3 {
   background-color: #10282c;
-}
+} */
 .card h1 {
   font-size: 18px;
   margin: 1px;
   text-decoration: underline;
-
+  color: aquamarine;
   text-transform: uppercase;
 }
 .contact {
   display: flex;
+
   width: 100dvw;
-  background: linear-gradient(
-    180deg,
-    hsla(189, 93%, 18%, 1) 0%,
-    hsla(192, 37%, 42%, 1) 57%,
-    hsla(197, 50%, 71%, 1) 100%,
-    hsla(197, 50%, 71%, 1) 100%
-  );
-  justify-content: start;
-}
-.image {
-  width: 70dvw;
-  height: 100dvh;
-  background-image: url("Blue\ Beautiful\ Ocean\ Aerial\ Photography\ April\ Nature\ Desktop\ Wallpaper.png");
+  background-image: url("Black\ and\ Blue\ Abstract\ LinkedIn\ banner.png");
   background-size: cover;
-  background-color: #326977;
-}
-.contain {
-  width: 20dvw;
-  display: flex;
-  padding: 35px;
-  flex-direction: column;
-  align-items: stretch;
-
-  justify-content: center;
-}
-.contain h1 {
-  width: 250px;
-  padding: 15px;
-  text-align: center;
-  text-transform: capitalize;
-}
-.contain input {
-  padding: 15px;
-  width: 250px;
-}
-.socail {
-  width: 280px;
-  height: 50px;
-  display: flex;
-  gap: 30px;
-  margin-top: 50px;
-  justify-content: center;
 }
 
-.contain select {
-  width: 280px;
-  padding: 30px;
-  padding: 15px 15px 15px 15px;
-}
-.contain option {
-  margin: 20px;
-}
-.button1 {
-  width: 283px;
-  margin-top: 50px;
-  background-color: #fff;
-  color: #10282c;
-  padding: 15px 15px 15px 15px;
-  transition: background-color 1s;
-  font-size: 18px;
-  font-weight: 400;
-}
-.button1:hover {
-  background-color: #bf5d0e;
+.contain_5 {
+  display: flex;
+  align-items: center;
   color: #fff;
 }
+.details {
+  display: flex;
+  align-items: start;
+  background-color: aquamarine;
+  justify-content: center;
+  height: 50dvh;
+  width: max-content;
+  gap: 30px;
+  flex-direction: column;
+}
+.thankspad {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 50dvh;
 
+  width: 50dvw;
+  gap: 30px;
+  flex-direction: column;
+  color: #fff;
+}
+.thankspad h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+span {
+  width: 500px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.thankspad span {
+  width: 600px;
+  margin: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.thankspad p {
+  color: #fff;
+}
+.socail {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  justify-content: space-between;
+}
 .foot {
   height: 70px;
   text-transform: capitalize;
   display: flex;
   text-align: center;
-  background-color: #034b57;
+  background-color: #000;
   width: 100dvw;
   justify-content: center;
-  color: white;
   align-items: center;
+}
+.foot p {
+  color: #fff;
 }
